@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+  - name: Bring up docker-compose
+    command: docker-compose -f /home/ec2-user/docker-compose.yml up -d
